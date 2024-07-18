@@ -37,4 +37,15 @@ function [xdata, tdata] = run_simulations(L)
     end
 end
 
+% Run simulations for different line lengths
+[xdata1, tdata1] = run_simulations(10);
+[xdata2, tdata2] = run_simulations(5);
+[xdata3, tdata3] = run_simulations(1);
+
+% Combine data
+xdata = vertcat(xdata1, xdata2, xdata3, xdata1, xdata2, xdata3, xdata1, xdata2, xdata3);
+tdata = vertcat(tdata1, tdata2, tdata3, tdata1, tdata2, tdata3, tdata1, tdata2, tdata3);
+
+% Save data to file for future use or analysis
+save('fault_data.mat', 'xdata', 'tdata');
 
