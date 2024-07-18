@@ -10,7 +10,6 @@ x1=[Va6 Vb6 Vc6 Ia6 Ib6 Ic6 V06 I06]
 x1(1,8)
 t1=[0]
 t1(1,1)
-
 [tout,xout,yout] = sim('AG6.slx',[0 0.4],simopt);
 x2=[Va6 Vb6 Vc6 Ia6 Ib6 Ic6 V06 I06]
 x2(1,8)
