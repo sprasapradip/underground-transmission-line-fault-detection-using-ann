@@ -2,3 +2,39 @@ clc;
 clear all;
 close all;
 warning off;
+
+% Initialize simulation options
+simopt = simset('solver', 'ode23tb', 'SrcWorkspace', 'Current', 'Dstworkspace', 'Current');
+
+% Define function to run simulation and collect data
+function [xdata, tdata] = run_simulations(L)
+    fault_types = {'Normal6', 'AG6', 'BG6', 'CG6', 'AB6', 'ABG6', 'BC6', 'BCG6', 'AC6', 'ACG6'};
+    fault_codes = [
+        0 0 0 0 L;
+        1 0 0 1 L;
+        0 1 0 1 L;
+        0 0 1 1 L;
+        1 1 0 0 L;
+        1 1 0 1 L;
+        0 1 1 0 L;
+        0 1 1 1 L;
+        1 0 1 0 L;
+        1 0 1 1 L;
+    ];
+    xdata = [];
+    tdata = [];
+    
+    for i = 1:length(fault_types)
+        sim_file = [fault_types{i} '.slx'];
+        [tout, xout, yout] = sim(sim_file, [0 0.4], simopt);
+        Va6 = yout(:,1); Vb6 = yout(:,2); Vc6 = yout(:,3);
+        Ia6 = yout(:,4); Ib6 = yout(:,5); Ic6 = yout(:,6);
+        V06 = yout(:,7); I06 = yout(:,8);
+        x = [Va6, Vb6, Vc6, Ia6, Ib6, Ic6, V06, I06];
+        t = fault_codes(i, :);
+        xdata = vertcat(xdata, x);
+        tdata = vertcat(tdata, t);
+    end
+end
+
+
