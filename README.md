@@ -8,4 +8,13 @@
 - Pradip Subedi 
 - Sneha Kumari Singh 
 - Subash Sharma  
+## Project Supervisor
+Er. Sudeep Thapaliya
+
+**United Technical College**  
+Faculty of Science and Technology  
+Affiliated to Pokhara University, Nepal  
+JULY, 2024
+
+
 
