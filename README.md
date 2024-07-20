@@ -16,5 +16,15 @@ Faculty of Science and Technology
 Affiliated to Pokhara University, Nepal  
 JULY, 2024
 
+## Abstract
 
+Whenever a fault occurs in an underground cable, it is difficult to detect the exact location of the fault for the process of repairing that particular cable. Diagnosing a fault is challenging and requires the entire cable to be taken out from the ground to check and fix faults. This project work aims to detect and classify fault types with their location. To locate a fault in the cable, the cable must be tested for faults. This system uses MATLAB simulations to analyze electrical signals. The current varies depending on the length of the fault in the cable. The proposed system detects the fault and classifies fault types with the exact location of the fault. This method is tested on the IEEE-9 bus system, showing better speed and accuracy than traditional methods. This solution improves the reliability and efficiency of power distribution networks.
+
+**Keywords:** Fault detection, fault classification, fault localization, neural networks, MATLAB simulation, IEEE 9-bus system, deep learning.
+
+## Features
+- Fault detection
+- Fault classification
+- Fault localization
+- MATLAB simulations
 
