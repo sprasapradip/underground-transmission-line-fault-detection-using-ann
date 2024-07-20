@@ -28,3 +28,19 @@ Whenever a fault occurs in an underground cable, it is difficult to detect the e
 - Fault localization
 - MATLAB simulations
 
+
+
+## Usage
+
+1. **Open MATLAB**.
+2. **Navigate to the project directory in MATLAB**.
+3. **Run the simulation scripts** to detect and classify faults.
+
+## License
+
+The author has agreed that the library, Department of Electrical and Electronic Engineering, United Technical College, may make this report freely available for inspection. Moreover, the author has agreed that permission for extensive copying of this project report for scholarly purposes may be granted by the supervisors who supervised the project work recorded herein or, in their absence, by the head of the Department where the project report was done. It is understood that recognition will be given to the author of this report and to the Department of Electrical and Electronics Engineering, United Technical College for any use of the material of this project report. Copyright or publication or other use of this report for financial gain without approval of the Department of Electrical and Electronic Engineering, United Technical College and the author's written permission is prohibited. Requests for permission to copy or make any other use of the material in this report in whole or in part should be addressed to:
+
+**Er. Sahit Baral**  
+Head of Department of Electrical and Electronics Engineering  
+United Technical College  
+Bharatpur-11, Nepal
